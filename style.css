@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background-color: silver;
+  overflow: auto;
+}
+#container{
+    width: 100%;
+    height: 65px;
+    /* background-color: rgb(96, 94, 240); */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);
+    background-color: silver;
+
+}
+
+#navigation ul{
+text-align: center;
+্z-index: 5;
+}
+#navigation ul li{
+    width: 105px;
+    height: 62px;
+    line-height: 65px;
+    /* background-color: rgb(96, 94, 240); */
+    background-color: rgb(11, 26, 240);
+    position: relative;
+    float: left;
+    list-style: none;
+    text-align: center;
+    /* border: 1px solid gold; */
+    border: 0.5px solid white;
+    border-radius: 10px;
+   padding: 0 2px;
+   transition: 0.5s;
+  z-index: 5;
+}
+
+#navigation ul li a{
+    text-decoration: none;
+    font-size: 12px;
+  color: rgb(236, 224, 224);
+  font-weight: bold;
+z-index: 5;
+}
+
+
+#navigation ul li:hover{
+    background-color: rgb(6, 57, 109);
+    z-index: 5;
+}
+
+#navigation ul ul{
+ display: none;
+ z-index: 5;
+}
+
+#navigation ul li:hover > ul {
+display: block;
+z-index: 5;
+    
+}
+
+#navigation ul ul ul{
+  position: absolute;
+  top: 0;
+  left: 105px;
+}
+
+#logo{
+    float: left;
+    padding-right: 200px;
+}
+
+#logo img{
+    width: 110px;
+    height: 60px;
+}
+
+#hero-area{
+    width: 100%;
+    height: auto;
+
+      
+}
+#slider-container{
+    width: 1200px;
+    height:85vh;
+    margin: auto;
+    
+}
+h1{
+  color:red;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 5px;
+  text-shadow: 5px 5px 5px  black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+ 
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #e70a0a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #13eeee;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+  /* --------section coding start here---------- */
+
+  .features-area-title{
+    text-align: center;
+  }
+
+  .features-area-title > h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .features-area-title > h2::after {
+    content: '';
+    top: 52px;
+    left: 470px;
+    width: 180px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+}
+  hr{
+    width: 500px;
+    height: 2px;
+    background-color: rgb(224, 216, 216);
+    margin-bottom: 10px;
+    margin-left: 300px;
+ 
+  }
+
+  .each-features-parent{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding-bottom: 60px;
+
+  }
+
+  .features-area{
+    width: 1100px;
+    margin: auto;
+  }
+
+  .features{
+    background-color: rgba(223, 223, 235, 0.993);
+    height: 150px;
+    text-align: center;
+    border: 2px solid ghostwhite;
+    border-radius: 6px;
+  }
+
+  
+
+  .features a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+   padding-bottom: 10px;
+    transition: 0.5s;
+  }
+
+
+  .features a:hover{
+    color: red;
+  }
+  .features img{
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+  }
+
+
+  /* --------------- start second section code here--------------------------------- */
+
+
+
+
+.product-area-parent{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  border: 2px solid ghostwhite;
+  border-radius: 5px;
+
+}
+
+
+.second-section{
+  width: 1100px;
+  margin: auto;
+  padding-bottom: 60px;
+
+}
+
+#product-title{
+  text-align: center;
+}
+
+#product-title > h2{
+  font-size: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#product-title > h2::after{
+  content: '';
+  top: 55px;
+  left: 470px;
+  width: 180px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+
+}
+
+.product-area{
+   text-align: center;
+   background-color: rgba(223, 223, 235, 0.993);
+}
+
+.product-area > img{
+  width: 150px;
+  height: 150px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.product-area > a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 25px;
+  transition: 0.5s;
+}
+
+.product-area > a:hover{
+  color: red;
+}
+
+.product-area > .price{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+
+
+  /* ------------------ Third section code here-------------------------------- */
+
+
+  .third-section{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 60px;
+  
+  }
+
+  .product-info{
+    text-align: center;
+    padding-bottom: 30px;
+   
+  }
+  .product-info > .btn{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 6px  10px;
+    outline: none;
+    border: 1px solid gold;
+    border-radius: 10px;
+    background-color: rgb(6, 69, 131);
+    cursor: pointer;
+    transition: 0.5s;
+  
+  }
+.btn:hover{
+  background-color: rgb(117, 8, 8);
+}
+
+
+   /* ------------ forth section code here---------------------------------- */
+
+
+   .four-section{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 60px;
+  
+  }
+
+
+/* -------footer area code start-------------- */
+
+.parent-div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  
+}
+
+.footer-area{
+  width: 1100px;
+  height: auto;
+  background-color:silver;
+  margin: auto;
+   text-align: center;
+
+}
+
+.footer-title{
+  text-align: center;
+  padding: 10px;
+  color: red;
+ 
+}
+
+.footer-title > a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.spn{
+  font-size: 16px;
+  color: white;
+}
+
+.title-div{
+  background-color: #0c2679;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pTag{
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
